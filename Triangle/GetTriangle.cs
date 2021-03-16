@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Triangle
 {
-
+    abstract class Triangle
+    {
+        abstract public double GetArea();
+        abstract public int GetPerimetr();
+    }
     class GetTriangle : Triangle
     {
 
@@ -20,7 +24,6 @@ namespace Triangle
             this.a = a;
             this.b = b;
             this.c = c;
-
         }
         override public double GetArea()
         {
@@ -30,10 +33,5 @@ namespace Triangle
         {
             return a + b + c;
         }
-    }
-    abstract class Triangle
-    {
-        abstract public double GetArea();
-        abstract public int GetPerimetr();
     }
 }
