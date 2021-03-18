@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Triangles;
-
 
 namespace Triangles
 {
-    class Isosceles_trianglecs : GetTriangles
+    class RectangularTriangle : GetTriangles
     {
-        public Isosceles_trianglecs(int a, int b,int angle) : base(a, b, angle)
+        public RectangularTriangle(int a, int b, int angle) : base(a,b,angle)
         {
         }
         public override double Area => throw new NotImplementedException();
@@ -19,25 +17,17 @@ namespace Triangles
 
         public override double AngleB => throw new NotImplementedException();
 
-        public  double AreaOfIsoscelesTrianglecs()
+        public override double AreaOfRectangularTriangle() 
         {
-            return (1 / 2) * b * Math.Sqrt((a + (1 / 2) * b) * (a - (1 / 2) * b));
+            return (a * b) / 2;
         }
-
-        public override double AreaOfRectangularTriangle()
-        {
-            throw new NotImplementedException();
-        }
-
         public override double Hypotenuse()
         {
-            throw new NotImplementedException();
+            return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         }
         public override double TriangleIsoscel()
         {
-            if (a == b || a == angle || b == angle)
-                return AreaOfIsoscelesTrianglecs();
-            return 0;
+            throw new NotImplementedException();
         }
     }
 }

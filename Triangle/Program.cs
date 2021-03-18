@@ -1,5 +1,5 @@
 ﻿using System;
-using Triangle;
+using Triangles;
 
 namespace TTriangle
 {
@@ -7,34 +7,28 @@ namespace TTriangle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Висота: ");
-            double heigth = double.Parse(Console.ReadLine());
-            Console.WriteLine("Основа Трикутника: ");
-            double baseOfTriangle = double.Parse(Console.ReadLine());
             Console.WriteLine("Сторона а: ");
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Сторона b: ");
             int b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Сторона c: ");
-            int c = int.Parse(Console.ReadLine());
-            Console.WriteLine("Дві сторони та кут між ними: ");
-            int y = int.Parse(Console.ReadLine());
-            GetTriangle getTriangle = new GetTriangle(heigth, baseOfTriangle, a,b,c,y);
+            Console.WriteLine("Кут: ");
+            int angle = int.Parse(Console.ReadLine());
             Console.WriteLine("Площа трикутника: ");
-            Console.WriteLine(getTriangle.GetArea());
+            GetTriangles getTriangles = new RectangularTriangle(a, b, angle);
+            Console.WriteLine(getTriangles.GetArea());
             Console.WriteLine("Периметр трикутника: ");
-            Console.WriteLine(getTriangle.GetPerimetr());
-            Console.WriteLine("Дві сторони та кут між ними: ");
-            Console.WriteLine(getTriangle.GetUnknownPart());
-            Console.WriteLine("Пошук кута коли відомі всі сторони(кута А: ");
-            Console.WriteLine(getTriangle.GetAngleA());
-            Console.WriteLine("Пошук кута коли відомі всі сторони(кута B: ");
-            Console.WriteLine(getTriangle.GetAngleB());
-            RectangularTriangle rectangularTriangle = new RectangularTriangle(heigth, baseOfTriangle, a, b, c, y);
+            Console.WriteLine(getTriangles.GetPerimetr());
+            Console.WriteLine("Пошук кута коли вiдомi всi сторони(кута А: ");
+            Console.WriteLine(getTriangles.GetAngleA());
+            Console.WriteLine("Пошук кута коли вiдомi всi сторони(кута B: ");
+            Console.WriteLine(getTriangles.GetAngleB());
+            RectangularTriangle rectangularTriangle = new RectangularTriangle( a, b, angle);
             Console.WriteLine("Площа прямокутного трикутника: ");
             Console.WriteLine(rectangularTriangle.AreaOfRectangularTriangle());
             Console.WriteLine("Гiпотенуза: ");
             Console.WriteLine(rectangularTriangle.Hypotenuse());
+            Console.WriteLine("Рiвнобедрений трикутник: ");
+            Console.WriteLine(rectangularTriangle.TriangleIsoscel());
         }
     }
 }
