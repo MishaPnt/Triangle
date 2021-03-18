@@ -10,7 +10,7 @@ namespace Triangle
         public Isosceles_trianglecs(double heigth, double baseOfTriangle, int a, int b, int c, int y) : base(heigth, baseOfTriangle, a, b, c, y)
         {
         }
-        public double AreaOfIsoscelesTrianglecs()
+        public double AreaOfIsoscelesTrianglecs() //https://profmeter.com.ua/communication/learning/course/course25/lesson965/
         {
             return (1 / 2) * b * Math.Sqrt((a + (1 / 2) * b) * (a - (1 / 2) * b));
         }
