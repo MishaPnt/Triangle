@@ -8,7 +8,7 @@ namespace Triangles
 {
     class IsoscelesTrianglecs : GetTriangles
     {
-        public IsoscelesTrianglecs(int a, int b,int angle) : base(a, b, angle)
+        public IsoscelesTrianglecs(int a, int b, int angle) : base(a, b, angle)
         {
         }
         public override double Area => throw new NotImplementedException();
@@ -19,7 +19,7 @@ namespace Triangles
 
         public override double AngleB => throw new NotImplementedException();
 
-        public  double AreaOfIsoscelesTrianglecs()
+        public double AreaOfIsoscelesTrianglecs()
         {
             return (1 / 2) * b * Math.Sqrt((a + (1 / 2) * b) * (a - (1 / 2) * b));
         }
