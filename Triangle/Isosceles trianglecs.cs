@@ -6,9 +6,9 @@ using Triangles;
 
 namespace Triangles
 {
-    class Isosceles_trianglecs : GetTriangles
+    class IsoscelesTrianglecs : GetTriangles
     {
-        public Isosceles_trianglecs(int a, int b,int angle) : base(a, b, angle)
+        public IsoscelesTrianglecs(int a, int b,int angle) : base(a, b, angle)
         {
         }
         public override double Area => throw new NotImplementedException();
