@@ -8,22 +8,26 @@ namespace Triangle
     {
         abstract public double GetArea();
         abstract public int GetPerimetr();
+        abstract public double GetUnknownPart();
+        abstract public double GetAngleA();
+        abstract public double GetAngleB();
     }
     class GetTriangle : Triangle
     {
-
-        public double heigth;
-        public double baseOfTriangle;
-        public int a;
-        public int b;
-        public int c;
-        public GetTriangle(double heigth, double baseOfTriangle, int a, int b, int c)
+         double heigth;
+         double baseOfTriangle;
+         public int a;
+         public int b;
+         public int c;
+         public int y;
+        public GetTriangle(double heigth, double baseOfTriangle, int a, int b, int c,int y)
         {
             this.heigth = heigth;
             this.baseOfTriangle = baseOfTriangle;
             this.a = a;
             this.b = b;
             this.c = c;
+            this.y = y;
         }
         override public double GetArea()
         {
@@ -32,6 +36,18 @@ namespace Triangle
         override public int GetPerimetr()
         {
             return a + b + c;
+        }
+        override public double GetUnknownPart() //Two sides and the angle between them. When the 3rd party is unknown
+        {
+            return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2) - 2 * a * b * Math.Cos(y));
+        }
+        override public double GetAngleA() // Search for an angle when all sides are known (angle A)
+        {
+            return Math.Acos((Math.Pow(b, 2) + Math.Pow(c, 2) - Math.Pow(a, 2))/(2*b*c));
+        }
+        override public double GetAngleB() // Search for an angle when all sides are known (angle )
+        {
+            return Math.Acos((Math.Pow(a, 2) + Math.Pow(c, 2) - Math.Pow(b, 2)) / (2 * a * c));
         }
     }
 }
