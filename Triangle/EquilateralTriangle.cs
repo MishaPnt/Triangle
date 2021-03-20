@@ -9,7 +9,6 @@ namespace Triangle
     {
         public EquilateralTriangle(int a, int b, int angle) : base(a, b, angle)
         {
-
         }
 
         public override double PerimetrEquilateral()
@@ -44,10 +43,12 @@ namespace Triangle
         {
             throw new NotImplementedException();
         }
+
         public override double PerimetrRectangular()
         {
             throw new NotImplementedException();
         }
+
         public override double AreaIsosceles()
         {
             throw new NotImplementedException();

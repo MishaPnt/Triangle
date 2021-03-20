@@ -39,7 +39,6 @@ namespace TTriangle
             Console.WriteLine(rectangularTriangle.AreaEquilateral());
             Console.WriteLine("Периметр рiвносторонього трикутника: ");
             Console.WriteLine(rectangularTriangle.PerimetrEquilateral());
-
         }
     }
 }
