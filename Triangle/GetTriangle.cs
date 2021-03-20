@@ -13,9 +13,12 @@ namespace Triangles
         public abstract double AngleA { get; }
 
         public abstract double AngleB { get; }
-        public abstract double AreaOfRectangularTriangle();
-        public abstract double Hypotenuse();
+        public abstract double AreaRectangular();
+        public abstract double HypotenuseRectangular();
         public abstract double TriangleIsoscel();
+        public abstract double PerimetrEquilateral();
+        public abstract double AreaEquilateral();
+
 
         public int a;
         public int b;
@@ -26,11 +29,11 @@ namespace Triangles
             this.b = b;
             this.angle = angle;
         }
-        public double GetArea()
+        public double AreaTriangle()
         {
             return 1.0 / 2 * a * b;
         }
-        public int GetPerimetr()
+        public int PerimetrTriangle()
         {
             return a + b + angle;
         }

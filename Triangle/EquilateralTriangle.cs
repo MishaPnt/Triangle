@@ -11,6 +11,14 @@ namespace Triangle
         {
 
         }
+        public override double PerimetrEquilateral()
+        {
+            return 3 * a;
+        }
+        public override double AreaEquilateral()
+        {
+            return (Math.Pow(a, 2) * Math.Sqrt(3)) / 4;
+        }
 
         public override double Area => throw new NotImplementedException();
 
@@ -20,12 +28,12 @@ namespace Triangle
 
         public override double AngleB => throw new NotImplementedException();
 
-        public override double AreaOfRectangularTriangle()
+        public override double AreaRectangular()
         {
             throw new NotImplementedException();
         }
 
-        public override double Hypotenuse()
+        public override double HypotenuseRectangular()
         {
             throw new NotImplementedException();
         }

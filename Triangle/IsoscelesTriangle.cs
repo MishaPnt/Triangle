@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Triangles;
 
 
 namespace Triangles
@@ -19,24 +16,35 @@ namespace Triangles
 
         public override double AngleB => throw new NotImplementedException();
 
-        public double AreaOfIsoscelesTrianglecs()
+        public override double AreaEquilateral()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double AreaIsosceles()
         {
             return (1 / 2) * b * Math.Sqrt((a + (1 / 2) * b) * (a - (1 / 2) * b));
         }
 
-        public override double AreaOfRectangularTriangle()
+        public override double AreaRectangular()
         {
             throw new NotImplementedException();
         }
 
-        public override double Hypotenuse()
+        public override double HypotenuseRectangular()
         {
             throw new NotImplementedException();
         }
+
+        public override double PerimetrEquilateral()
+        {
+            throw new NotImplementedException();
+        }
+
         public override double TriangleIsoscel()
         {
             if (a == b || a == angle || b == angle)
-                return AreaOfIsoscelesTrianglecs();
+                return AreaIsosceles();
             return 0;
         }
     }

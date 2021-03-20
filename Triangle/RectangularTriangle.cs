@@ -17,13 +17,21 @@ namespace Triangles
 
         public override double AngleB => throw new NotImplementedException();
 
-        public override double AreaOfRectangularTriangle() 
+        public override double AreaRectangular() 
         {
             return (a * b) / 2;
         }
-        public override double Hypotenuse()
+        public override double HypotenuseRectangular()
         {
             return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+        }
+        public override double AreaEquilateral()
+        {
+            throw new NotImplementedException();
+        }
+        public override double PerimetrEquilateral()
+        {
+            throw new NotImplementedException();
         }
         public override double TriangleIsoscel()
         {
