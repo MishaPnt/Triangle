@@ -25,13 +25,21 @@ namespace TTriangle
             RectangularTriangle rectangularTriangle = new RectangularTriangle( a, b, angle);
             Console.WriteLine("Площа прямокутного трикутника: ");
             Console.WriteLine(rectangularTriangle.AreaRectangular());
+            Console.WriteLine("Периметр прямокутного трикутника: ");
+            Console.WriteLine(rectangularTriangle.PerimetrRectangular());
             Console.WriteLine("Гiпотенуза прямокутного трикутника: ");
             Console.WriteLine(rectangularTriangle.HypotenuseRectangular());
             Console.WriteLine("Рiвнобедрений трикутник: ");
-            Console.WriteLine(rectangularTriangle.TriangleIsoscel());
+            Console.WriteLine(rectangularTriangle.AreaIsoscel()); 
+            Console.WriteLine("Периметр Рiвнобедреного трикутника: ");
+            Console.WriteLine(rectangularTriangle.PerimetrIsosceles());
             Console.WriteLine("Рiвностороннiй трикутник: ");
             Console.WriteLine(rectangularTriangle.PerimetrEquilateral());
+            Console.WriteLine("Площа рiвносторонього трикутника: ");
             Console.WriteLine(rectangularTriangle.AreaEquilateral());
+            Console.WriteLine("Периметр рiвносторонього трикутника: ");
+            Console.WriteLine(rectangularTriangle.PerimetrEquilateral());
+
         }
     }
 }

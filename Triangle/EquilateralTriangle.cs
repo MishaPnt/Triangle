@@ -11,10 +11,12 @@ namespace Triangle
         {
 
         }
+
         public override double PerimetrEquilateral()
         {
             return 3 * a;
         }
+
         public override double AreaEquilateral()
         {
             return (Math.Pow(a, 2) * Math.Sqrt(3)) / 4;
@@ -38,10 +40,22 @@ namespace Triangle
             throw new NotImplementedException();
         }
 
-        public override double TriangleIsoscel()
+        public override double AreaIsoscel()
+        {
+            throw new NotImplementedException();
+        }
+        public override double PerimetrRectangular()
+        {
+            throw new NotImplementedException();
+        }
+        public override double AreaIsosceles()
         {
             throw new NotImplementedException();
         }
 
+        public override double PerimetrIsosceles()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
