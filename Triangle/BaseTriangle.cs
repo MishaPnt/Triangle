@@ -11,6 +11,7 @@ namespace Triangle
         {
 
         }
+
         public override double Area()
         {
             return 1.0 / 2 * a * b;

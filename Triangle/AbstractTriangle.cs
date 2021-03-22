@@ -15,6 +15,7 @@ namespace Triangles
         protected int a;
         protected int b;
         protected int angle;
+
         public  AbstractTriangle( int a, int b, int angle)
         {
             this.a = a;
