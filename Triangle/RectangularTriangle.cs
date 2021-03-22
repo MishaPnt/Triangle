@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Triangles
 {
-    class RectangularTriangle : AbstractTriangle
+    class RectangularTriangle : Getriangle
     {
         public RectangularTriangle(int a, int b, int angle) : base(a,b,angle)
         {
@@ -14,17 +11,7 @@ namespace Triangles
             return (a * b) / 2;
         }
 
-        public override double GetAngleA()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double GetAngleB()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double HypotenuseRectangular()
+        public double HypotenuseRectangular()
         {
             return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         }
