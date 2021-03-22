@@ -5,33 +5,20 @@ using Triangles;
 
 namespace Triangle
 {
-    class EquilateralTriangle : GetTriangles
+    class EquilateralTriangle : AbstractTriangle
     {
         public EquilateralTriangle(int a, int b, int angle) : base(a, b, angle)
         {
         }
 
-        public override double PerimetrEquilateral()
+        public override double Perimetr()
         {
             return 3 * a;
         }
 
-        public override double AreaEquilateral()
+        public override double Area()
         {
             return (Math.Pow(a, 2) * Math.Sqrt(3)) / 4;
-        }
-
-        public override double Area => throw new NotImplementedException();
-
-        public override int Perimetr => throw new NotImplementedException();
-
-        public override double AngleA => throw new NotImplementedException();
-
-        public override double AngleB => throw new NotImplementedException();
-
-        public override double AreaRectangular()
-        {
-            throw new NotImplementedException();
         }
 
         public override double HypotenuseRectangular()
@@ -39,22 +26,12 @@ namespace Triangle
             throw new NotImplementedException();
         }
 
-        public override double AreaIsoscel()
+        public override double GetAngleA()
         {
             throw new NotImplementedException();
         }
 
-        public override double PerimetrRectangular()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double AreaIsosceles()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double PerimetrIsosceles()
+        public override double GetAngleB()
         {
             throw new NotImplementedException();
         }

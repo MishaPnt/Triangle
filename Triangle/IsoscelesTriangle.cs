@@ -3,40 +3,26 @@
 
 namespace Triangles
 {
-    class IsoscelesTrianglecs : GetTriangles
+    class IsoscelesTrianglecs : AbstractTriangle
     {
         public IsoscelesTrianglecs(int a, int b, int angle) : base(a, b, angle)
         {
         }
-        public override double Area => throw new NotImplementedException();
-
-        public override int Perimetr => throw new NotImplementedException();
-
-        public override double AngleA => throw new NotImplementedException();
-
-        public override double AngleB => throw new NotImplementedException();
-
-
-        public override double AreaIsosceles()
+        public  double AreaIsosceles()
         {
             return (1 / 2) * b * Math.Sqrt((a + (1 / 2) * b) * (a - (1 / 2) * b));
         }
 
-        public override double AreaIsoscel()
+        public override double Area()
         {
             if (a == b || a == angle || b == angle)
                 return AreaIsosceles();
             return 0;
         }
 
-        public override double PerimetrIsosceles()
+        public override double Perimetr()
         {
             return 2 * a + b;
-        }
-
-        public override double AreaRectangular()
-        {
-            throw new NotImplementedException();
         }
 
         public override double HypotenuseRectangular()
@@ -44,17 +30,12 @@ namespace Triangles
             throw new NotImplementedException();
         }
 
-        public override double AreaEquilateral()
+        public override double GetAngleA()
         {
             throw new NotImplementedException();
         }
 
-        public override double PerimetrEquilateral()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double PerimetrRectangular()
+        public override double GetAngleB()
         {
             throw new NotImplementedException();
         }

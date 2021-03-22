@@ -1,4 +1,5 @@
 ﻿using System;
+using Triangle;
 using Triangles;
 
 namespace TTriangle
@@ -14,31 +15,33 @@ namespace TTriangle
             Console.WriteLine("Кут: ");
             int angle = int.Parse(Console.ReadLine());
             Console.WriteLine("Площа трикутника: ");
-            GetTriangles getTriangles = new RectangularTriangle(a, b, angle);
-            Console.WriteLine(getTriangles.AreaTriangle());
+            AbstractTriangle baseTriangle = new BaseTriangle(a, b, angle);
+            Console.WriteLine(baseTriangle.Area());
             Console.WriteLine("Периметр трикутника: ");
-            Console.WriteLine(getTriangles.PerimetrTriangle());
+            Console.WriteLine(baseTriangle.Perimetr());
             Console.WriteLine("Пошук кута коли вiдомi всi сторони(кута А: ");
-            Console.WriteLine(getTriangles.GetAngleA());
+            Console.WriteLine(baseTriangle.GetAngleA());
             Console.WriteLine("Пошук кута коли вiдомi всi сторони(кута B: ");
-            Console.WriteLine(getTriangles.GetAngleB());
-            RectangularTriangle rectangularTriangle = new RectangularTriangle( a, b, angle);
+            Console.WriteLine(baseTriangle.GetAngleB());
+            AbstractTriangle rectangularTriangle = new RectangularTriangle( a, b, angle);
             Console.WriteLine("Площа прямокутного трикутника: ");
-            Console.WriteLine(rectangularTriangle.AreaRectangular());
+            Console.WriteLine(rectangularTriangle.Area());
             Console.WriteLine("Периметр прямокутного трикутника: ");
-            Console.WriteLine(rectangularTriangle.PerimetrRectangular());
+            Console.WriteLine(rectangularTriangle.Perimetr());
             Console.WriteLine("Гiпотенуза прямокутного трикутника: ");
             Console.WriteLine(rectangularTriangle.HypotenuseRectangular());
+            AbstractTriangle isoscelesTrianglecs = new IsoscelesTrianglecs(a, b, angle);
             Console.WriteLine("Рiвнобедрений трикутник: ");
-            Console.WriteLine(rectangularTriangle.AreaIsoscel()); 
+            Console.WriteLine(isoscelesTrianglecs.Area()); 
             Console.WriteLine("Периметр Рiвнобедреного трикутника: ");
-            Console.WriteLine(rectangularTriangle.PerimetrIsosceles());
+            Console.WriteLine(isoscelesTrianglecs.Perimetr());
+            AbstractTriangle equilateralTriangle = new EquilateralTriangle(a, b, angle);
             Console.WriteLine("Рiвностороннiй трикутник: ");
-            Console.WriteLine(rectangularTriangle.PerimetrEquilateral());
+            Console.WriteLine(equilateralTriangle.Perimetr());
             Console.WriteLine("Площа рiвносторонього трикутника: ");
-            Console.WriteLine(rectangularTriangle.AreaEquilateral());
+            Console.WriteLine(equilateralTriangle.Area());
             Console.WriteLine("Периметр рiвносторонього трикутника: ");
-            Console.WriteLine(rectangularTriangle.PerimetrEquilateral());
+            Console.WriteLine(equilateralTriangle.Perimetr());
         }
     }
 }
