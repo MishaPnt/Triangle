@@ -5,7 +5,7 @@ namespace Triangle
 {
     class EquilateralTriangle : Ttriangle
     {
-        public EquilateralTriangle(double a, double b, double angle) : base(a, b, angle)
+        public EquilateralTriangle(double a) : base(a,a,90)
         {
         }
 
@@ -16,7 +16,7 @@ namespace Triangle
 
         public override double Area()
         {
-            return (Math.Pow(a, 2) * Math.Sqrt(3)) / 4;
+            return (a*a * Math.Sqrt(3)) / 4;
         }
     }
 }

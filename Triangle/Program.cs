@@ -25,7 +25,7 @@ namespace TTriangle
             Console.WriteLine(isoscelesTrianglecs.Area()); 
             Console.WriteLine("Периметр Рiвнобедреного трикутника: ");
             Console.WriteLine(isoscelesTrianglecs.Perimetr());
-            Ttriangle equilateralTriangle = new EquilateralTriangle(a, b, angle);
+            Ttriangle equilateralTriangle = new EquilateralTriangle(a);
             Console.WriteLine("Рiвностороннiй трикутник: ");
             Console.WriteLine(equilateralTriangle.Perimetr());
             Console.WriteLine("Площа рiвносторонього трикутника: ");
