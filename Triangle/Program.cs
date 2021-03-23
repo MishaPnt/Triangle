@@ -12,7 +12,6 @@ namespace TTriangle
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine("Кут: ");
             int angle = int.Parse(Console.ReadLine());
-            Console.WriteLine("Площа трикутника: ");
             Triangle rectangularTriangle = new RectangularTriangle( a, b);
             Console.WriteLine("Площа прямокутного трикутника: ");
             Console.WriteLine(rectangularTriangle.Area());
@@ -25,7 +24,6 @@ namespace TTriangle
             Console.WriteLine(isoscelesTrianglecs.Perimetr());
             Triangle equilateralTriangle = new EquilateralTriangle(a);
             Console.WriteLine("Рiвностороннiй трикутник: ");
-            Console.WriteLine(equilateralTriangle.Perimetr());
             Console.WriteLine("Площа рiвносторонього трикутника: ");
             Console.WriteLine(equilateralTriangle.Area());
             Console.WriteLine("Периметр рiвносторонього трикутника: ");
