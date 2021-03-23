@@ -3,15 +3,15 @@
 
 namespace Triangles
 {
-    class IsoscelesTrianglecs : Getriangle
+    class IsoscelesTrianglecs : Ttriangle
     {
-        public IsoscelesTrianglecs(int a, int b, int angle) : base(a, b, angle)
+        public IsoscelesTrianglecs(double a, double b, double angle) : base(a, b, angle)
         {
         }
 
         public override double Area()
         {
-            return (1.0 / 2) * b * Math.Sqrt((a + (1 / 2) * b) * (a - (1 / 2) * b));
+            return (1.0 / 2) * b * Math.Sqrt((a + (1.0 / 2) * b) * (a - (1.0 / 2) * b));
         }
 
         public override double Perimetr()

@@ -1,19 +1,14 @@
 ﻿using System;
 namespace Triangles
 {
-    class RectangularTriangle : Getriangle
+    class RectangularTriangle : Ttriangle
     {
-        public RectangularTriangle(int a, int b, int angle) : base(a,b,angle)
+        public RectangularTriangle(double a, double b, double angle) : base(a,b,90)
         {
         }
         public override double Area() 
         {
             return (a * b) / 2;
-        }
-
-        public double HypotenuseRectangular()
-        {
-            return Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         }
 
         public override double Perimetr()

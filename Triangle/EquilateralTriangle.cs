@@ -3,9 +3,9 @@ using Triangles;
 
 namespace Triangle
 {
-    class EquilateralTriangle : Getriangle
+    class EquilateralTriangle : Ttriangle
     {
-        public EquilateralTriangle(int a, int b, int angle) : base(a, b, angle)
+        public EquilateralTriangle(double a, double b, double angle) : base(a, b, angle)
         {
         }
 

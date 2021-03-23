@@ -1,16 +1,16 @@
 ﻿
 namespace Triangles
 {
-    abstract class Getriangle
+    abstract class Ttriangle
     {
         public abstract double Area();
         public abstract double Perimetr();
 
-        protected int a;
-        protected int b;
-        protected int angle;
+        protected double a;
+        protected double b;
+        protected double angle;
 
-        public  Getriangle( int a, int b, int angle)
+        public  Ttriangle( double a, double b, double angle)
         {
             this.a = a;
             this.b = b;
