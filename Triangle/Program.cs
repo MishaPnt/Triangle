@@ -15,7 +15,7 @@ namespace TTriangle
             Console.WriteLine("Кут: ");
             int angle = int.Parse(Console.ReadLine());
             Console.WriteLine("Площа трикутника: ");
-            Ttriangle rectangularTriangle = new RectangularTriangle( a, b, angle);
+            Ttriangle rectangularTriangle = new RectangularTriangle( a, b);
             Console.WriteLine("Площа прямокутного трикутника: ");
             Console.WriteLine(rectangularTriangle.Area());
             Console.WriteLine("Периметр прямокутного трикутника: ");

@@ -3,7 +3,7 @@ namespace Triangles
 {
     class RectangularTriangle : Ttriangle
     {
-        public RectangularTriangle(double a, double b, double angle) : base(a,b,90)
+        public RectangularTriangle(double a, double b) : base(a,b,90)
         {
         }
         public override double Area() 
