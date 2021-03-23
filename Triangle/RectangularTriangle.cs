@@ -1,7 +1,8 @@
 ﻿using System;
-namespace Triangles
+
+namespace TTriangle
 {
-    class RectangularTriangle : Ttriangle
+    class RectangularTriangle : Triangle
     {
         public RectangularTriangle(double a, double b) : base(a,b,90)
         {

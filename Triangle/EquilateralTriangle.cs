@@ -1,9 +1,8 @@
 ﻿using System;
-using Triangles;
 
-namespace Triangle
+namespace TTriangle
 {
-    class EquilateralTriangle : Ttriangle
+    class EquilateralTriangle : Triangle
     {
         public EquilateralTriangle(double a) : base(a,a,90)
         {

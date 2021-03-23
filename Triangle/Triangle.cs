@@ -1,7 +1,7 @@
 ﻿
-namespace Triangles
+namespace TTriangle
 {
-    abstract class Ttriangle
+    abstract class Triangle
     {
         public abstract double Area();
         public abstract double Perimetr();
@@ -10,7 +10,7 @@ namespace Triangles
         protected double b;
         protected double angle;
 
-        public  Ttriangle( double a, double b, double angle)
+        public  Triangle( double a, double b, double angle)
         {
             this.a = a;
             this.b = b;

@@ -1,9 +1,9 @@
 ﻿using System;
 
 
-namespace Triangles
+namespace TTriangle
 {
-    class IsoscelesTrianglecs : Ttriangle
+    class IsoscelesTrianglecs : Triangle
     {
         public IsoscelesTrianglecs(double a, double b, double angle) : base(a, b, angle)
         {
